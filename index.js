@@ -7,7 +7,7 @@ app.use(express.json());
 const PORT =process.env.PORT||8500;
 
 // view all Rooms and its details
-app.get('/rooms/all', (req, res)=> {
+app.get('/', (req, res)=> {
     res.status(200).json({RoomsList : rooms});
     console.log(rooms)
   })
