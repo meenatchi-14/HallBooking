@@ -122,4 +122,6 @@ app.get('/customers', (req, res) => {
   });
 
 
-app.listen(PORT, ()=> console.log("started server hallbooking"));
+  app.listen(PORT,()=>{
+    console.log(`Server listening port ${PORT} `)
+})
