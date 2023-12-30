@@ -4,6 +4,7 @@ import { bookings } from './data.js';
 import { customers } from './data.js';
 const app = express();
 app.use(express.json());
+const PORT =process.env.PORT||8500;
 
 // view all Rooms and its details
 app.get('/rooms/all', (req, res)=> {
@@ -121,4 +122,4 @@ app.get('/customers', (req, res) => {
   });
 
 
-app.listen(8500, ()=> console.log("started server hallbooking"));
+app.listen(PORT, ()=> console.log("started server hallbooking"));
